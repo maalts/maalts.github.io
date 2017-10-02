@@ -25,7 +25,7 @@ SECRET_KEY = 'be5o83ko_qmz$8+vay@khf+xhp!y&gi3bvn&4kg(gj4nvc%uv0'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['maxaltfilms.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1','maxaltfilms.herokuapp.com']
 
 
 # Application definition
