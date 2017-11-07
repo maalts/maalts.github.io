@@ -314,13 +314,16 @@ body {
 
 #skills-section {
   background: #0C1A3B;
+  height: 1005;
   color: #fff;
 }
 #gallery-section {
   background: #041E54;
+  height: 100%;
   color: #fff;
 }
 #contact-section {
   background: #1F2C49;
+  height: 100%;
   color: #fff;
 }
