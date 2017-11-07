@@ -196,36 +196,6 @@ nav {
     background: rgba(255, 255, 255, 0.1);
 }
 
-.content-section {
-    padding-top: 150px;
-    padding-bottom: 150px;
-}
-
-.download-section {
-    color: white;
-    background: url("../img/downloads-bg.jpg") no-repeat center center scroll;
-    background-color: black;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-#map {
-    width: 100%;
-    height: 300px;
-}
-
-@media (min-width: 992px) {
-    .content-section {
-        padding-top: 200px;
-        padding-bottom: 200px;
-    }
-    #map {
-        height: 350px;
-    }
-}
-
 .btn {
     font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 400;
@@ -304,10 +274,6 @@ body {
     -webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
 }
 
-.intro-text-style {
-    padding-top: 70%;
-}
-
 .section-title {
     font-family: "Permanent Marker";
 }
@@ -315,18 +281,25 @@ body {
 #skills-section {
     display: block;
     background: #0C1A3B;
-    height: 100%;
+    height: 100vh;
     color: #fff;
 }
 #gallery-section {
     display: block;
     background: #041E54;
-    height: 100%;
+    height: 100vh;
     color: #fff;
 }
 #contact-section {
     display: block;
     background: #1F2C49;
-    height: 100%;
+    height: 80vh;
     color: #fff;
+}
+#footer-section {
+    display: block;
+    height: 20vh;
+}
+section p {
+    font-size: 80%;
 }
