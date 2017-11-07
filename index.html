@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Max Alt Films</title>
-    <!--    load static folder -->{% load static %}
-    <link rel="stylesheet" type="text/css" href="{% static 'index/css/style.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'index/css/skills-bar.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'index/css/footer.css' %}">
+    <link rel="stylesheet" type="text/css" href="./maxaltfilms/maxaltfilms/website/static/index/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./maxaltfilms/maxaltfilms/website/static/index/css/skills-bar.css">
+    <link rel="stylesheet" type="text/css" href="./maxaltfilms/maxaltfilms/website/static/index/css/footer.css">
     <!-- bootstrap stylesheet-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap-responsive.min.css" />
@@ -23,7 +22,7 @@
 <body>
     <nav class="navbar navbar-toggleable-md navbar-light fixed-top bg-faded">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>   
-        <a class="navbar-brand" href="#"><img src="{% static 'index/img/nav-brand.png' %}"></a>
+        <a class="navbar-brand" href="#"><img src="./maxaltfilms/maxaltfilms/website/static/index/img/nav-brand.png"></a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item skills-link"> <a class="nav-link" href="#skills-section">Skills</a> </li>
@@ -64,7 +63,77 @@
                     <div class="text-center col skills-section-text">
                     <p>After spending countless hours teaching myself Lightroom and Premiere Pro, I've achieved near mastery of both, yet there is still a lot to learn. My programming skills are slightly less advanced, although definetely not amatuer. This site is built with a python and django backend, and html, css, and javascript in the front end.</p>
                     </div>
-                </div>
+                    <div class="col animated-skills-bars">
+                        <!-- skill bars made by Arnaud Balland link : https://codepen.io/ArnaudBalland/pen/PwgqMO?limit=all&page=2&q=skills -->
+                        <!-- i just made some tweaks :P -->
+                        <ul class="skills-bar-container">
+                          <li>
+                            <div class="progressbar-title">
+                                <h3>Lightroom</h3>
+                                <span class="percent" id="lightroom-pourcent"></span>
+                            </div>
+                            <div class="bar-container">
+                              <span class="progressbar progressblue" id="progress-lightroom"></span>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="progressbar-title">
+                                <h3>Premiere Pro</h3>
+                                <span class="percent" id="premiere-pourcent"></span>
+                            </div>
+                            <div class="bar-container">
+                              <span class="progressbar progresspurple" id="progress-premiere"></span>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="progressbar-title">
+                                <h3>Photoshop</h3>
+                                <span class="percent" id="photoshop-pourcent"></span>
+                            </div>
+                            <div class="bar-container">
+                              <span class="progressbar progresspsblue" id="progress-photoshop"></span>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="progressbar-title">
+                                <h3>PYTHON</h3>
+                                <span class="percent" id="python-pourcent"></span>
+                            </div>
+                            <div class="bar-container">
+                              <span class="progressbar progressgreen" id="progress-python"></span>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="progressbar-title">
+                                <h3>RUBY</h3>
+                                <span class="percent" id="ruby-pourcent"></span>
+                            </div>
+                            <div class="bar-container">
+                              <span class="progressbar progressred" id="progress-ruby"></span>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="progressbar-title">
+                                <h3>HTML/CSS</h3>
+                                <span class="percent" id="frontend-pourcent"></span>
+                            </div>
+                            <div class="bar-container">
+                              <span class="progressbar progressorange" id="progress-frontend"></span>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="progressbar-title">
+                                <h3>JAVASCRIPT</h3>
+                                <span class="percent" id="javascript-pourcent"></span>
+                            </div>
+                            <div class="bar-container">
+                              <span class="progressbar progressbrown" id="progress-javascript"></span>
+                            </div>
+                          </li>
+
+
+                        </ul>
+                    </div>
 
                 </div>
             </div>
@@ -138,7 +207,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
-    <script type="text/javascript" src="{% static 'index/js/skills-bar.js' %}"></script>
+    <script type="text/javascript" src="./maxaltfilms/maxaltfilms/website/static/index/js/skills-bar.js"></script>
     <script>
         $(".navbar li").on("click", function(){
    $(".navbar").find(".active").removeClass("active");
