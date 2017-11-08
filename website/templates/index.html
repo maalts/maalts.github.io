@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Max Alt Films</title>
-    <!--    load static folder -->{% load static %}
-    <link rel="stylesheet" type="text/css" href="{% static 'index/css/style.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'index/css/skills-bar.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'index/css/footer.css' %}">
+    <!--    load static folder -->{% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href='{% static "index/css/style.css" %}'>
+    <!-- <link rel="stylesheet" type="text/css" href="{% static 'index/css/footer.css' %}"> -->
     <!-- bootstrap stylesheet-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap-responsive.min.css" />
@@ -26,8 +25,8 @@
         <a class="navbar-brand" href="#"><img src="{% static 'index/img/nav-brand.png' %}"></a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
+                <li class="nav-item about-link"> <a class="nav-link" href="#about-section">About</a> </li>
                 <li class="nav-item skills-link"> <a class="nav-link" href="#skills-section">Skills</a> </li>
-                <li class="nav-item gallery-link"> <a class="nav-link" href="#gallery-section">Gallery</a> </li>
                 <li class="nav-item contact-link"> <a class="nav-link" href="#contact-section">Contact</a> </li>
             </ul>
         </div>
@@ -52,36 +51,19 @@
     </header>
 
 
-    <!-- Skills Section -->
-    <section id="skills-section" class="content-section">
+    <!-- About Section -->
+    <section id="about-section" class="content-section text-center">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto">
-                    <div class="text-center">
-                        <a href="#gallery-section" class="btn btn-circle js-scroll-trigger"> <i style='font-size: 30px;'class="fa fa-angle-double-down animated"></i> </a>
-                        <h2 class="section-title">SKILLS</h2>
-                    </div>
-                    <div class="text-center col skills-section-text">
-                    <p>After spending countless hours teaching myself Lightroom and Premiere Pro, I've achieved near mastery of both, yet there is still a lot to learn. My programming skills are slightly less advanced, although definetely not amatuer. This site is built with a python and django backend, and html, css, and javascript in the front end.</p>
-                    </div>
-                </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Gallery Section -->
-    <section id="gallery-section" class="content-section text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <a href="#contact-section" class="btn btn-circle js-scroll-trigger"> <i style='font-size: 30px;'class="fa fa-angle-double-down animated"></i> </a>
-                    <h2 class="section-title">GALLERY</h2>
+                    <a href="#skills-section" class="btn btn-circle js-scroll-trigger"> <i style='font-size: 30px;'class="fa fa-angle-double-down animated"></i> </a>
+                    <h2 class="section-title">ABOUT</h2>
                     
                     <div class="text-center col skills-section-text">
-                    <p>Photography is a huge hobby of mine, and one that I put a lot of effort into. Most images go up on my instagram, below is a preview. Click here or on any one of the images to view my profile. I'm currently in the proccess of setting up a gallery site to put more photos on. Check back for that soon.</p>
+                    <h4>Professional Photographer and Cinematographer</h4>
+                    <h5>Occasional Programmer</h5>
+                    <p>Based in NYC. Preview my Instagram below, and click on a photo to view it on Instagram.</p>
+                    <p> Full Gallery Site Coming Soon!</p>
                     </div>
 
                     <div class="col instagram-preview">
@@ -89,6 +71,26 @@
                         <script src="https://snapwidget.com/js/snapwidget.js"></script>
                         <iframe src="https://snapwidget.com/embed/448982" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Skills Section -->
+    <section id="skills-section" class="content-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="text-center">
+                        <a href="#contact-section" class="btn btn-circle js-scroll-trigger"> <i style='font-size: 30px;'class="fa fa-angle-double-down animated"></i> </a>
+                        <h2 class="section-title">SKILLS</h2>
+                    </div>
+                    <div class="text-center col skills-section-text">
+                    <p>After spending countless hours teaching myself Lightroom and Premiere Pro, I've achieved near mastery of both, yet there is still a lot to learn. My programming skills are slightly less advanced, although definetely not amatuer. This site is built with a python and django backend, and html, css, and javascript in the front end.</p>
+                    </div>
+                </div>
+
                 </div>
             </div>
         </div>
