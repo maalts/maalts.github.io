@@ -25,7 +25,7 @@ SECRET_KEY = 'be5o83ko_qmz$8+vay@khf+xhp!y&gi3bvn&4kg(gj4nvc%uv0'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1','maxaltfilms.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1','maxaltfilms.herokuapp.com','*']
 
 
 # Application definition
@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'website',
+    'catalog',
 ]
 
 MIDDLEWARE = [
@@ -127,3 +128,4 @@ USE_TZ = True
 
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 STATIC_URL = '/static/'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
