@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Max Alt Films</title>
-    <!--    load static folder -->{% load staticfiles %}
+    <!--    load static folder -->{% load static %}
     <link rel="stylesheet" type="text/css" href='{% static "index/css/style.css" %}'>
-    <!-- <link rel="stylesheet" type="text/css" href="{% static 'index/css/footer.css' %}"> -->
+    <link rel="stylesheet" type="text/css" href="{% static 'index/css/footer.css' %}">
     <!-- bootstrap stylesheet-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap-responsive.min.css" />
@@ -26,7 +26,8 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item about-link"> <a class="nav-link" href="#about-section">About</a> </li>
-                <li class="nav-item skills-link"> <a class="nav-link" href="#skills-section">Skills</a> </li>
+                <li class="nav-item photo-link"> <a class="nav-link" href="#photo-section">Photography</a> </li>
+                <li class="nav-item film-link"> <a class="nav-link" href="#film-section">Film</a> </li>
                 <li class="nav-item contact-link"> <a class="nav-link" href="#contact-section">Contact</a> </li>
             </ul>
         </div>
@@ -41,9 +42,9 @@
                     <div class="col-lg-8 mx-auto" style="color: #f9f1e8;">
                         <div class="intro-text-style">
                             <h1 class="brand-heading">Max Alt</h1>
-                            <h3 class="intro-text">Photographer, Filmmaker, Programmer</h3>
+                            <h3 class="intro-text">I'm currently under construction, please excuse my appearance :)</h3>
                         </div>
-                        <a href="#skills-section" class="btn btn-circle js-scroll-trigger"> <i style='font-size: 30px;'class="fa fa-angle-double-down animated"></i> </a>
+                        <a href="#about-section" class="btn btn-circle js-scroll-trigger"> <i style='font-size: 30px;'class="fa fa-angle-double-down animated"></i> </a>
                     </div>
                 </div>
             </div>
@@ -56,20 +57,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto">
-                    <a href="#skills-section" class="btn btn-circle js-scroll-trigger"> <i style='font-size: 30px;'class="fa fa-angle-double-down animated"></i> </a>
+                    <a href="#photo-section" class="btn btn-circle js-scroll-trigger"> <i style='font-size: 30px;'class="fa fa-angle-double-down animated"></i> </a>
                     <h2 class="section-title">ABOUT</h2>
-                    
-                    <div class="text-center col skills-section-text">
-                    <h4>Professional Photographer and Cinematographer</h4>
-                    <h5>Occasional Programmer</h5>
-                    <p>Based in NYC. Preview my Instagram below, and click on a photo to view it on Instagram.</p>
-                    <p> Full Gallery Site Coming Soon!</p>
-                    </div>
 
-                    <div class="col instagram-preview">
-                        <!-- SnapWidget -->
-                        <script src="https://snapwidget.com/js/snapwidget.js"></script>
-                        <iframe src="https://snapwidget.com/embed/448982" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
+                    <div class="text-center col">
+                    <p>Based in NYC. Professional photographer, filmmaker, and programmer.</p>
+                    <p> Full Gallery Site Coming Soon!</p>
                     </div>
                 </div>
             </div>
@@ -77,17 +70,42 @@
     </section>
 
 
-    <!-- Skills Section -->
-    <section id="skills-section" class="content-section">
+    <!-- Photo Section -->
+    <section id="photo-section" class="content-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="text-center">
+                        <a href="#film-section" class="btn btn-circle js-scroll-trigger"> <i style='font-size: 30px;'class="fa fa-angle-double-down animated"></i> </a>
+                        <h2 class="section-title">Photography</h2>
+                    </div>
+                    <div class="text-center col">
+                    <p>Most of my photos go up on Instagram, which you can preview below. Click on any image to go to view my full profile.</p>
+                    <p>Full Gallery Site with all my photos coming soon!</p>
+                    </div>
+                    <div class="col instagram-preview">
+                        <!-- SnapWidget -->
+                        <script src="https://snapwidget.com/js/snapwidget.js"></script>
+                        <iframe src="https://snapwidget.com/embed/448982" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Film Section -->
+    <section id="film-section" class="content-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto">
                     <div class="text-center">
                         <a href="#contact-section" class="btn btn-circle js-scroll-trigger"> <i style='font-size: 30px;'class="fa fa-angle-double-down animated"></i> </a>
-                        <h2 class="section-title">SKILLS</h2>
+                        <h2 class="section-title">Film</h2>
                     </div>
-                    <div class="text-center col skills-section-text">
-                    <p>After spending countless hours teaching myself Lightroom and Premiere Pro, I've achieved near mastery of both, yet there is still a lot to learn. My programming skills are slightly less advanced, although definetely not amatuer. This site is built with a python and django backend, and html, css, and javascript in the front end.</p>
+                    <div class="text-center col">
+
                     </div>
                 </div>
 
@@ -144,8 +162,6 @@
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-
-    <script type="text/javascript" src="{% static 'index/js/skills-bar.js' %}"></script>
     <script>
         $(".navbar li").on("click", function(){
    $(".navbar").find(".active").removeClass("active");
