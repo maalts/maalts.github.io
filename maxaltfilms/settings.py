@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'whitenoise.runserver_nostatic',
     'django.contrib.staticfiles',
+    'embed_video',
     'website',
 ]
 
@@ -107,6 +108,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.static',
+    'django.core.context_processors.request',
 )
 
 # Internationalization
