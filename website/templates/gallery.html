@@ -1,0 +1,35 @@
+<!-- website/templates/gallery.html -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max Alt Films</title>
+    <!--    load static folder -->{% load static %}
+    <link rel="stylesheet" type="text/css" href='{% static "index/css/style.css" %}'>
+    <link rel="stylesheet" type="text/css" href="{% static 'index/css/footer.css' %}">
+    <!-- bootstrap stylesheet-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap-responsive.min.css" />
+    <!-- Custom fonts  -->
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> </head>
+
+<body>
+    <nav class="navbar navbar-toggleable-md navbar-light fixed-top bg-faded">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+        <a class="navbar-brand" href="#"><img src="{% static 'index/img/nav-brand.png' %}"></a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item about-link"> <a class="nav-link" href="#about-section">About</a> </li>
+                <li class="nav-item photo-link"> <a class="nav-link" href="#photo-section">Photography</a> </li>
+                <li class="nav-item film-link"> <a class="nav-link" href="#film-section">Film</a> </li>
+                <li class="nav-item contact-link"> <a class="nav-link" href="#contact-section">Contact</a> </li>
+            </ul>
+        </div>
+    </nav>
+</body>
+
+</html>

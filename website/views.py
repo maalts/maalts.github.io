@@ -13,5 +13,5 @@ class HomePageView(TemplateView):
     template_name = 'index.html'
 
 # add a view with a template
-class AboutPageView(TemplateView):
-	template_name = 'about.html'
+class GalleryPageView(TemplateView):
+	template_name = 'gallery.html'
