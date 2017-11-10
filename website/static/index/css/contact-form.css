@@ -56,7 +56,7 @@ form #input-submit:hover {
   box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
 }
 form textarea {
-  height: 126px;
+  height: 200px;
 }
 
 .half {
