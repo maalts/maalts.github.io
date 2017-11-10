@@ -9,6 +9,7 @@
     <title>Max Alt Films</title>
     <!--    load static folder -->
     <link rel="stylesheet" type="text/css" href='{% static "index/css/index-style.css" %}'>
+    <link rel="stylesheet" type="text/css" href='{% static "index/css/contact-form.css" %}'>
     <link rel="stylesheet" type="text/css" href="{% static 'index/css/footer.css' %}">
     <!-- bootstrap stylesheet-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
@@ -43,7 +44,7 @@
                     <div class="col-lg-10 mx-auto" style="color: #f9f1e8;">
                         <div class="intro-text-style">
                             <h1 class="brand-heading">Max Alt</h1>
-                            <h3 class="intro-text">I'm currently under construction, please excuse my appearance :)</h3>
+                            <h3 class="intro-text"></h3>
                         </div>
                         <a href="#about-section" class="btn btn-circle js-scroll-trigger"> <i style='font-size: 30px;'class="fa fa-angle-double-down animated"></i> </a>
                     </div>
@@ -69,7 +70,7 @@
             </div>
         </div>
     </section>
-<div class="bottom-border"></div>
+    <div class="bottom-border"></div>
 
     <!-- Photo Section -->
     <section id="photo-section" class="content-section">
@@ -94,7 +95,7 @@
             </div>
         </div>
     </section>
-
+    <div class="bottom-border"></div>
 
     <!-- Film Section -->
     <section id="film-section" class="content-section">
@@ -115,7 +116,7 @@
             </div>
         </div>
     </section>
-
+    <div class="bottom-border"></div>
 
 
     <!-- Contact Section -->
@@ -126,11 +127,25 @@
                     <a href="#" class="btn btn-circle js-scroll-trigger"> <i style='font-size: 30px;'class="fa fa-angle-double-up animated"></i> </a>
                     <h2 class="section-title">LETS TALK</h2>
                     <p>Thanks for looking through.</p>
-                    <p>Any questions, comments, or other inquiries are always appreciated. If you'd like to get in touch fill out this form and I'll get back to you.</p>
+                    <p>Any questions, comments, or other inquiries are always appreciated. I'm currently working on setting up a proper email form, but feel free to click this button to send me an email</p>
+                    <a href="mailto:maxaltfilms@gmail.com"><button type="button" class="btn btn-info">Click Me!</button></a>
+
+                    <!-- <p>If you'd like to get in touch fill out this form and I'll get back to you.</p> -->
                     <!-- www.123contactform.com script begins here -->
                     <!-- <script type="text/javascript" defer src="//www.123contactform.com/embed/3024692.js" data-role="form" data-default-width="650px"></script> -->
-
-
+                    <!-- <div class="contact-form">
+                    <form class="cf">
+                        <div class="half left cf">
+                            <input type="text" id="input-name" placeholder="Name">
+                            <input type="email" id="input-email" placeholder="Email address">
+                            <input type="text" id="input-subject" placeholder="Subject">
+                        </div>
+                        <div class="half right cf">
+                            <textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
+                        </div>  
+                            <input type="submit" value="Submit" id="input-submit">
+                        </form>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -138,15 +153,16 @@
 
 
     <!-- Footer Section -->
+    <!-- footer made by JPCR link : https://bootsnipp.com/snippets/k2nNB -->
+        <!-- all credit goes to him, i just made some tweaks -->
     <section id="footer-section">
         <div class="footer">
-        <!-- footer made by JPCR link : https://bootsnipp.com/snippets/k2nNB -->
-        <!-- all credit goes to him, i just made some tweaks -->
+        
             <div class="container">
-                  <a href='https://www.facebook.com/maxaltfilms'><i class="fa fa-facebook fa-3x fa-fw"></i></a>
-                  <a href='https://www.youtube.com/channel/UCuO7ynQXNowE3DjekhSR2AQ'><i class="fa fa-youtube-play fa-3x fa-fw"></i></a>
-                  <a href='https://github.com/maalts'><i class="fa fa-github fa-3x fa-fw"></i></a>
-                <a href='https://www.linkedin.com/in/max-a-3b526a105/'><i class="fa fa-linkedin fa-3x fa-fw"></i></a>
+                  <a href='https://www.facebook.com/maxaltfilms'><i class="fa fa-facebook fa-2x fa-fw"></i></a>
+                  <a href='https://www.youtube.com/channel/UCuO7ynQXNowE3DjekhSR2AQ'><i class="fa fa-youtube-play fa-2x fa-fw"></i></a>
+                  <a href='https://github.com/maalts'><i class="fa fa-github fa-2x fa-fw"></i></a>
+                <a href='https://www.linkedin.com/in/max-a-3b526a105/'><i class="fa fa-linkedin fa-2x fa-fw"></i></a>
             </div>
         </div>
     </section>
