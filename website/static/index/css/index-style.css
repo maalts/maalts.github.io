@@ -33,6 +33,7 @@ h6 {
     margin: 0 0 35px;
     letter-spacing: 1px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 p {
@@ -210,6 +211,7 @@ section {
     display: block;
     background: #FAF9FE;
     padding-bottom: 10vh;
+    padding-top: 10vh;
 }
 
 section p {
