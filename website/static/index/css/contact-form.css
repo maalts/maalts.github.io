@@ -7,13 +7,7 @@
   box-sizing: border-box;
 }
 
-html, body {
-  background: #f1f1f1;
-  font-family: 'Merriweather', sans-serif;
-  padding: 1em;
-}
-
-h1 {
+form h1 {
   text-align: center;
   color: #a8a8a8;
   text-shadow: 1px 1px 0 white;

@@ -7,26 +7,26 @@
 }
 
 .container{
-  color: #fff;
+  color: #262721;
   width: 100%;
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
 .fa-facebook {
-    color: #3B5998;
+  color: #FAF9FE;
 }
 
 .fa-youtube-play {
-    color: #e52d27;
+  color: #FAF9FE;
 }
 
 .fa-linkedin {
-    color: #007bb6;
+  color: #FAF9FE;
 }
 
 .fa-github {
-    color: #85007D;
+  color: #FAF9FE;
 }
 
 .fa {
